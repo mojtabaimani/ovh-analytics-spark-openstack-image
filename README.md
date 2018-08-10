@@ -17,7 +17,7 @@ export OS_REGION_NAME=xxxx
 
 Build Spark as a Service base image for Spark cluster deployment on OVH Public Cloud infrastructure:
 
-```./build.sh```
+```./build-image.sh```
 
 
 # Credits
