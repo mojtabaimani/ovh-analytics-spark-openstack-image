@@ -2,6 +2,7 @@
 
 server=sparkservicetemp
 echo creating server instance 
+openstack server delete "$server"
 openstack server create --flavor b2-7 --image "Ubuntu 16.04" --key-name mojtaba-ovhmac --wait --min 1 --max 1 "$server"
 if [ $? -ne 0 ]
 then
@@ -36,7 +37,7 @@ openstack server stop "$server"
 
 sleep 6s
 
-openstack server image delete sparkclusterservice 
+openstack image delete sparkclusterservice 
 sleep 2s 
 
 openstack server image create --name sparkclusterservice "$server"
