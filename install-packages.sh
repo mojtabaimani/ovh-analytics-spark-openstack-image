@@ -2,7 +2,7 @@
 sudo apt-get update 
 sudo apt-get update 
 
-sudo apt install -y default-jre
+sudo apt install -y default-jre pv
 sudo apt-get update
 
 
@@ -12,50 +12,50 @@ echo 'export SPARK_HOME=/home/ubuntu/spark-2.2.1-bin-hadoop2.7' >> .bashrc # (de
 source .bashrc
 
 
-wget https://archive.apache.org/dist/spark/spark-2.3.1/spark-2.3.1-bin-hadoop2.7.tgz
-tar xvzf spark-2.3.1-bin-hadoop2.7.tgz
+wget https://archive.apache.org/dist/spark/spark-2.3.1/spark-2.3.1-bin-hadoop2.7.tgz -q --show-progress
+pv spark-2.3.1-bin-hadoop2.7.tgz | tar xzf - 
 rm spark-2.3.1-bin-hadoop2.7.tgz
 
-wget https://archive.apache.org/dist/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz 
-tar xvzf spark-2.3.0-bin-hadoop2.7.tgz
+wget https://archive.apache.org/dist/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz -q --show-progress
+pv spark-2.3.0-bin-hadoop2.7.tgz | tar xzf - 
 rm spark-2.3.0-bin-hadoop2.7.tgz
 
-wget https://archive.apache.org/dist/spark/spark-2.2.2/spark-2.2.2-bin-hadoop2.7.tgz
-tar xvzf spark-2.2.2-bin-hadoop2.7.tgz
+wget https://archive.apache.org/dist/spark/spark-2.2.2/spark-2.2.2-bin-hadoop2.7.tgz -q --show-progress
+pv spark-2.2.2-bin-hadoop2.7.tgz | tar xzf - 
 rm spark-2.2.2-bin-hadoop2.7.tgz
 
-wget https://archive.apache.org/dist/spark/spark-2.2.1/spark-2.2.1-bin-hadoop2.7.tgz
-tar xvzf spark-2.2.1-bin-hadoop2.7.tgz
+wget https://archive.apache.org/dist/spark/spark-2.2.1/spark-2.2.1-bin-hadoop2.7.tgz -q --show-progress
+pv spark-2.2.1-bin-hadoop2.7.tgz | tar xzf - 
 rm spark-2.2.1-bin-hadoop2.7.tgz
 
-wget https://archive.apache.org/dist/spark/spark-2.2.0/spark-2.2.0-bin-hadoop2.7.tgz
-tar xvzf spark-2.2.0-bin-hadoop2.7.tgz
+wget https://archive.apache.org/dist/spark/spark-2.2.0/spark-2.2.0-bin-hadoop2.7.tgz -q --show-progress
+pv spark-2.2.0-bin-hadoop2.7.tgz | tar xzf - 
 rm spark-2.2.0-bin-hadoop2.7.tgz
 
-wget https://archive.apache.org/dist/spark/spark-2.1.3/spark-2.1.3-bin-hadoop2.7.tgz
-tar xvzf spark-2.1.3-bin-hadoop2.7.tgz
+wget https://archive.apache.org/dist/spark/spark-2.1.3/spark-2.1.3-bin-hadoop2.7.tgz -q --show-progress
+pv spark-2.1.3-bin-hadoop2.7.tgz | tar xzf - 
 rm spark-2.1.3-bin-hadoop2.7.tgz
 
-wget https://archive.apache.org/dist/spark/spark-2.1.2/spark-2.1.2-bin-hadoop2.7.tgz
-tar xvzf spark-2.1.2-bin-hadoop2.7.tgz
+wget https://archive.apache.org/dist/spark/spark-2.1.2/spark-2.1.2-bin-hadoop2.7.tgz -q --show-progress
+pv spark-2.1.2-bin-hadoop2.7.tgz | tar xzf - 
 rm spark-2.1.2-bin-hadoop2.7.tgz
 
-wget https://archive.apache.org/dist/spark/spark-2.1.1/spark-2.1.1-bin-hadoop2.7.tgz
-tar xvzf spark-2.1.1-bin-hadoop2.7.tgz
+wget https://archive.apache.org/dist/spark/spark-2.1.1/spark-2.1.1-bin-hadoop2.7.tgz -q --show-progress
+pv spark-2.1.1-bin-hadoop2.7.tgz | tar xzf - 
 rm spark-2.1.1-bin-hadoop2.7.tgz
 
-wget https://archive.apache.org/dist/spark/spark-2.1.0/spark-2.1.0-bin-hadoop2.7.tgz
-tar xvzf spark-2.1.0-bin-hadoop2.7.tgz
+wget https://archive.apache.org/dist/spark/spark-2.1.0/spark-2.1.0-bin-hadoop2.7.tgz -q --show-progress
+pv spark-2.1.0-bin-hadoop2.7.tgz | tar xzf - 
 rm spark-2.1.0-bin-hadoop2.7.tgz
 
-wget https://archive.apache.org/dist/spark/spark-2.0.2/spark-2.0.2-bin-hadoop2.7.tgz
-tar xvzf spark-2.0.2-bin-hadoop2.7.tgz
+wget https://archive.apache.org/dist/spark/spark-2.0.2/spark-2.0.2-bin-hadoop2.7.tgz -q --show-progress
+pv spark-2.0.2-bin-hadoop2.7.tgz | tar xzf - 
 rm spark-2.0.2-bin-hadoop2.7.tgz
 
-wget https://archive.apache.org/dist/spark/spark-1.6.3/spark-1.6.3-bin-hadoop2.6.tgz
-tar xvzf spark-1.6.3-bin-hadoop2.6.tgz
+wget https://archive.apache.org/dist/spark/spark-1.6.3/spark-1.6.3-bin-hadoop2.6.tgz -q --show-progress
+pv spark-1.6.3-bin-hadoop2.6.tgz | tar xzf - 
 rm spark-1.6.3-bin-hadoop2.6.tgz
 
-wget https://archive.apache.org/dist/zeppelin/zeppelin-0.8.0/zeppelin-0.8.0-bin-all.tgz
-tar xvzf zeppelin-0.8.0-bin-all.tgz
+wget https://archive.apache.org/dist/zeppelin/zeppelin-0.8.0/zeppelin-0.8.0-bin-all.tgz -q --show-progress
+pv zeppelin-0.8.0-bin-all.tgz | tar xzf - 
 rm zeppelin-0.8.0-bin-all.tgz
