@@ -1,4 +1,4 @@
-# ovh-analytics-spark-openstack-image
+# OVH Analytics Spark Openstack Image 
 
 The Openstack public image for "Spark as a Service" in OVH alanytics platform
 
@@ -17,7 +17,7 @@ export OS_REGION_NAME=xxxx
 
 Build Spark as a Service base image for Spark cluster deployment on OVH Public Cloud infrastructure:
 
-```./build.sh```
+```./build-image.sh```
 
 
 # Credits
