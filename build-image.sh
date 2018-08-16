@@ -3,7 +3,11 @@
 server=sparkservicetemp
 echo creating server instance 
 openstack server create --flavor b2-7 --image "Ubuntu 16.04" --key-name mojtaba-ovhmac --wait --min 1 --max 1 "$server"
-
+if [ $? -ne 0 ]
+then
+    echo openstack server creation failed.
+    exit 1
+fi  
 
 sleep 6s
 
@@ -32,7 +36,15 @@ openstack server stop "$server"
 
 sleep 6s
 
+openstack server image delete sparkclusterservice 
+sleep 2s 
+
 openstack server image create --name sparkclusterservice "$server"
+if [ $? -ne 0 ]
+then
+    echo openstack image creation failed.
+    exit 1
+fi 
 
 sleep 6s 
 echo Please wait for few minutes for image to be uploaded to the Glance system. you can check if the image has Active status or not by command "openstack image list"
