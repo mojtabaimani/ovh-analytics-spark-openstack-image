@@ -13,6 +13,6 @@ RUN apt-get -y update \
     ssh \
     && pip install --upgrade --no-cache-dir pip python-openstackclient
 
-CMD ["sh", "-c", "/build-image.sh"]
+CMD ["sh", "-c", "/app/build-image.sh"]
 
 
