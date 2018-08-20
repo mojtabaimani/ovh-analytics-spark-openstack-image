@@ -5,7 +5,6 @@ LABEL Author="Mojtaba Imani mojtaba.imani@corp.ovh.com"
 
 WORKDIR /app
 ADD . /app
-ENV OS_TOEKN=$OS_TOKEN
 # RUN apt-get -y update && apt-get install -y fortunes
 RUN apt-get -y update \
     && apt-get install -y \
@@ -14,7 +13,6 @@ RUN apt-get -y update \
     ssh \
     && pip install --upgrade --no-cache-dir pip python-openstackclient
 
-#CMD ["sh", "-c", "/build-image.sh"]
-CMD ["echo $OS_TOKEN"]
+CMD ["sh", "-c", "/build-image.sh"]
 
 
