@@ -8,7 +8,7 @@ pipeline {
         
         stage('Build'){
             steps{
-                sh 'build-image.sh'
+                echo 'Hello'
             }
         }
     }
