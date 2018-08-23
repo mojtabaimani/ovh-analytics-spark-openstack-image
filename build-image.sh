@@ -47,7 +47,7 @@ imagename="Ubuntu 16.04 - Spark Service"
 openstack image delete "$imagename" $TOKEN_SWITCHES
 sleep 2s 
 
-openstack server image create --name "imagename" "$server" $TOKEN_SWITCHES
+openstack server image create --name "$imagename" "$server" $TOKEN_SWITCHES
 if [ $? -ne 0 ]
 then
     echo openstack image creation failed.
