@@ -1,5 +1,5 @@
 FROM ubuntu
-LABEL Name=ovh-analytics-spark-openstack-image Version=0.0.1
+LABEL Name=ovh-analytics-spark-service-image Version=0.0.1
 LABEL Descriptin="Provides a public openstack image for Spark as a Service in OVH"
 LABEL Author="Mojtaba Imani mojtaba.imani@corp.ovh.com"
 

@@ -59,3 +59,5 @@ rm spark-1.6.3-bin-hadoop2.6.tgz
 wget https://archive.apache.org/dist/zeppelin/zeppelin-0.8.0/zeppelin-0.8.0-bin-all.tgz -q --show-progress
 pv zeppelin-0.8.0-bin-all.tgz | tar xzf - 
 rm zeppelin-0.8.0-bin-all.tgz
+
+
